@@ -8,7 +8,7 @@
 <title>게시판</title>
 </head>
 <body>
-<H1>게시판</H1>
+<h1>게시판</h1>
 
 <form action="/board/register" method="post">
 	<table border=1>

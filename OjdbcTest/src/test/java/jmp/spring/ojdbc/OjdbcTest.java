@@ -4,7 +4,6 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.session.SqlSession;
 import org.apache.ibatis.session.SqlSessionFactory;
 import org.junit.Test;
@@ -33,20 +32,7 @@ public class OjdbcTest {
 	
 	@Autowired
 	BoardMapper boardMapper;
-	
 
-		 @Autowired BoardService service;
-		
-		@Autowired BoardMapper mapper;
-		
-		@Test public void mapper() { BoardVo vo= new BoardVo(); vo.setContent("내용-");
-		vo.setTitle("제목-"); vo.setWriter("작성자-"); mapper.insert(vo);
-		  log.info(vo); 
-		  log.info(service.insert(vo));
-		 }
-		 
-	
-	
 	@Test
 	public void tmTest() {
 		System.out.println(boardMapper.getList());
